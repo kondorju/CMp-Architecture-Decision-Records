@@ -1,0 +1,13 @@
+# 4. use salesforce IDs to identify suppliers in Crown Marketplace
+
+status
+proposed
+
+Context
+Salesforce has been appointed as our main database for storing information about our customers. As such, it should include all information about suppliers that we need to display on Crown Marketplace.
+
+Decision
+As soon as all supplier information (including trading name against framework the supplier one and all supplier branches) are recordable in Salesforce, we should take the information from these to display it on Crown Marketplace. This will mean that we do not need to hold this data in offline spreadsheets and that there is no need to update information in more than one place. Note that until an API is created to pull data to Crown Marketplace from Salesforce, we will need to manually upload data from Salesforce into Crown Marketplace.
+
+Consequences
+We will need to make sure that all supplier details can be setup in Salesforce. This requires us to be able to add different branches of the same suppliers and to record different trading names for suppliers per framework they are on. These may require Salesforce changes, which we should initiate.
